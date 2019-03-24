@@ -7,16 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-<!-- 
-Easy Profile Template
-http://www.templatemo.com/tm-467-easy-profile
--->
+	<!-- 
+	Easy Profile Template
+	http://www.templatemo.com/tm-467-easy-profile
+	-->
 	<!-- stylesheet css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/paper-kit.css">
-	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/templatemo-orange.css">
+
+
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse">
 
@@ -27,51 +27,21 @@ http://www.templatemo.com/tm-467-easy-profile
      </div>
 </div>
 
-<!-- header section -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Summertime - Canahdians</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-<!-- 
-Easy Profile Template
-http://www.templatemo.com/tm-467-easy-profile
--->
-	<!-- stylesheet css -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo-orange.css">
-</head>
-<body data-spy="scroll" data-target=".navbar-collapse">
-
-<!-- preloader section -->
-<div class="preloader">
-	<div class="sk-spinner sk-spinner-wordpress">
-       <span class="sk-inner-circle"></span>
-     </div>
+<!--sidebar-->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="https://canahdians.github.io">Home</a>
+  <a href="https://canahdians.github.io/#members">Members</a>
 </div>
 
-<!-- header section -->
-<img src="images/logo.png" style="float: left; width: 10px">
-
-<header>
-	<div class="aa-header">
-		<nav class="navbar navbar-expand-md navbar-transparent">
-		  <div class="container"><img class="img-fluid pr-3 aa-logo-img" src="images/logoblack.png" style="max-width: 70px;" alt="logo"><a class="navbar-brand px-0 py-0" href="#">The Canahdians</a>
-		    <div class="collapse navbar-collapse">
-		      <ul class="navbar-nav ml-auto">
-			<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-			<li class="nav-item"><a class="nav-link" href="#members">Members</a></li>
-		      </ul>
-		    </div>
-	  	 </div>
-		</nav>
+<div class="btncntn">
+	<div id="main">
+	  <button class="openbtn" onclick="openNav()">☰</button>
 	</div>
-		      
+</div>  
+
+<!-- header section -->
+<header>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
@@ -97,22 +67,22 @@ http://www.templatemo.com/tm-467-easy-profile
 			<div class="skills">
 				<h2 class="white">Skills</h2>
 				<strong>Singing</strong>
+				<span class="pull-right">90%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" 
+                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+					</div>
+				<strong>Dancing</strong>
 				<span class="pull-right">70%</span>
 					<div class="progress">
 						<div class="progress-bar progress-bar-primary" role="progressbar" 
                         aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
 					</div>
-				<strong>Dancing</strong>
-				<span class="pull-right">85%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" 
-                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
-					</div>
 				<strong>Rapping</strong>
-				<span class="pull-right">95%</span>
+				<span class="pull-right">10%</span>
 					<div class="progress">
 						<div class="progress-bar progress-bar-primary" role="progressbar" 
-                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
 					</div>
 			</div>
 		</div>
@@ -184,7 +154,7 @@ http://www.templatemo.com/tm-467-easy-profile
 </section>
 
 <!-- footer section -->
-<footer class="footer-black aa-footer" style="max-height:100px;">
+<footer class="footer-black aa-footer">
       <div class="container py-5">
         <div class="row text-center">
           <div class="col-md-12"><a class="btn btn-link btn-neutral" href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a><a class="btn btn-link btn-neutral" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a><a class="btn btn-link btn-neutral" href="mailto:canahdians@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a><a class="btn btn-link btn-neutral" href="https://www.instagram.com/official_canahdians"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></div>
@@ -196,11 +166,26 @@ http://www.templatemo.com/tm-467-easy-profile
     </footer>
 
 <!-- javascript js -->	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>	
 <script src="js/jquery.backstretch.min.js"></script>
 <script src="js/custom.js"></script>
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script>
+	function openNav() {
+	  document.getElementById("mySidebar").style.width = "250px";
+	  document.getElementById("main").style.marginLeft = "250px";
+	}
 
+	function closeNav() {
+	  document.getElementById("mySidebar").style.width = "0";
+	  document.getElementById("main").style.marginLeft= "0";
+	}
+</script>
+    
 </body>
 </html>
-
