@@ -360,4 +360,6 @@ footer {
 
 p.active {
   color: white;
+  font-size: 1rem;
+  margin-left: 15px
 }
