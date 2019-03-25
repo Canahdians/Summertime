@@ -352,3 +352,12 @@ footer {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
+
+.list-unstyled a {
+  font-size: 1rem;
+  margin-left: 15px;
+}
+
+p.active {
+  color: white;
+}
