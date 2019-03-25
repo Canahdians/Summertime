@@ -361,5 +361,6 @@ footer {
 p.active {
   color: white !important;
   font-size: 1rem;
-  margin-left: 15px
+  margin-left: 15px;
+  padding-left: 32px;
 }
